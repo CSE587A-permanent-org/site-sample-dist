@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "site_sample"
+version = "3.0.0"
+description = "CSE587 Site Sample Assignment"
+authors = ["chase mateusiak <chase.mateusiak@gmail.com>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "site_sample"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+cse587autils = "^3.0.2"
+numpy = "^1.25.2"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.1.1"
+nbsphinx = "^0.9.2"
+ipykernel = "^6.25.0"
+autopep8 = "^2.0.2"
+furo = "^2023.7.26"
+flake8 = "^6.0.0"
+gradescope-utils = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

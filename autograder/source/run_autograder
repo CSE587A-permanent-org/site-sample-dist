@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+rm /autograder/submission/site_sample/test_assignment.py
+
+cp /autograder/source/test_assignment.py /autograder/submission/site_sample/
+
+cd /autograder/submission/
+
+poetry install
+
+poetry run python3 /autograder/source/run_tests.py
